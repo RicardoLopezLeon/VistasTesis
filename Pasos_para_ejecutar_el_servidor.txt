@@ -1,0 +1,19 @@
+**Todo el powerShell como administrador**
+
+Set-ExecutionPolicy Unrestricted -Scope Process
+Confirma la acción escribiendo "Y" y presionando Enter.
+
+Intenta activar nuevamente tu entorno virtual ejecutando el comando:
+venv\Scripts\Activate
+
+Ahora debería activarse correctamente sin errores de política de ejecución. Recuerda que este cambio es temporal y solo afecta a la sesión actual de PowerShell.
+
+Una vez que hayas terminado de trabajar con tu entorno virtual, puedes revertir la política de ejecución utilizando este comando:
+
+Set-ExecutionPolicy Restricted -Scope Process
+
+Es importante tener en cuenta que cambiar la política de ejecución puede ser un riesgo de seguridad, así que es recomendable volver a la política restringida cuando hayas terminado de usarla.
+
+
+Una vez realizado ento en powershell, ejecutar el servidor con los siguiente:
+waitress-serve --listen=*:5000 estimacion:app
